@@ -43,6 +43,9 @@
     At EXITSERVICE_api call provide the ParkingID and VehicleNumber
     AT BILLINGANDTIMESERVICE goto localhost:9013/prktime for parking time enquiry by submitting ParkingID
     and goto localhost:9013/billing for Amount Payable enquiry  by submitting ParkingID
+    
+    Add "plot" as db into Mongodb and create the collections as vehicleentry,vehicleexit and billing.
+    Auth. is not implemented yet.
  
  ## API
     ENTRYSERVICE at localhost:9011/entry will accept api call with get method
