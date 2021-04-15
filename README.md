@@ -10,8 +10,9 @@
 
   ## Participants
     This application is developed in GO. It uses a distributed event streaming platform called Apache KAFKA
-    and DB as MongoDB. Application has 5 different services. This can run both natively and as container service.
-    It has Confluent Apache Kafka, and Mongodb container aloing with docker-compose to make it container ready.
+    and DB as MongoDB. Application has 5 different services. 
+    This can run both natively and as container service.It has Confluent Apache Kafka,
+    and Mongodb container aloing with docker-compose to make it container ready.
     
   ## Running Vehicleparkingapp in container
       Prerequisite
@@ -24,14 +25,15 @@
       This will start all the services.
       At localhost:9021 will run Confluent Control Center, follow the link to create a topic.
         https://docs.confluent.io/platform/current/quickstart/ce-docker-quickstart.html
-      Create two topic in the Name of "exit_topic" and "entry_topic" // this is configurable from the configfile.
+      Create two topic in the Name of "exit_topic" and "entry_topic" // this is configurable from the 
+      configfile.
       ** find the details in Config  section of this README.md file.
-      At localhost:9011 the ENTRYSERVICE will run where you can make rest call with application/json as described
-      in API section of this README.md file.
-      At localhost:9012 the EXITSERVICE will run where you can make rest call with application/json as described
-      in API section of this README.md file.
-      At localhost:9013 the BILLINGANDTIMESERVICE will run where you can make rest call with application/json as described
-      in API section of this README.md file.
+      At localhost:9011 the ENTRYSERVICE will run where you can make rest call with application/json 
+      as described in API section of this README.md file.
+      At localhost:9012 the EXITSERVICE will run where you can make rest call with application/json
+      as described in API section of this README.md file.
+      At localhost:9013 the BILLINGANDTIMESERVICE will run where you can make rest call with application/json
+      as described in API section of this README.md file.
       
   ## Using Vehicleparkingapp in container
     Use postman of anyother tool to make rest call to ENTRYSERVICE EXITSERVICE BILLINGANDTIMESERVICE
@@ -75,9 +77,10 @@
     this will give the parking time amount.
 
   ## Config
-    Before the running the application goto pkg/pconstant/constant.go. Here you can change the Configuration to
-    serve you environment.
-      // excuse the way the config file is implemented in comming time will be moved to ENV variable and .yaml file.
+    Before the running the application goto pkg/pconstant/constant.go. Here you can change the
+    Configuration to serve you need.
+      // excuse the way the config file is implemented in comming time will be moved to
+        ENV variable and .yaml file.
    
 
   ## Known Issue
